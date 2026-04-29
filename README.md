@@ -1,78 +1,48 @@
-\# API Security Testing Lab (Burp Suite + Postman + OWASP Juice Shop)
+# API Security Testing Lab (Burp Suite + Postman + OWASP Juice Shop)
 
-
-
-\## Overview
+## Overview
 
 This project demonstrates hands-on API security testing using Burp Suite and Postman on OWASP Juice Shop. The goal was to analyze API traffic, capture login requests, and understand how web applications communicate.
 
+## Tools Used
 
+- OWASP Juice Shop
+- Burp Suite
+- Postman
+- Node.js
 
-\## Tools Used
+## Key Skills
 
-\- OWASP Juice Shop
+- API request analysis
+- HTTP methods (GET, POST, PUT)
+- Traffic interception
+- Request filtering
+- Credential analysis
+- Request modification
+- Troubleshooting
 
-\- Burp Suite
+## Screenshots
 
-\- Postman
+### Juice Shop Running
 
-\- Node.js
+![Juice Shop](screenshots/juice-shop-running.png)
 
+### Login Request Captured
 
+![Login Request](screenshots/burp-filter-login.png)
 
-\## Key Skills
+### Modified Request
 
-\- API request analysis
+![Modified Request](screenshots/burp-modified-request-response.png)
 
-\- HTTP methods (GET, POST, PUT)
+### Postman Testing
 
-\- Traffic interception
+![Postman](screenshots/postman-get-request.png)
 
-\- Request filtering
+## Full Lab Report
 
-\- Credential analysis
+[View Full Report](docs/full-report.pdf)
 
-\- Request modification
-
-\- Troubleshooting
-
-
-
-\## Screenshots
-
-
-
-\### Juice Shop Running
-
-!\[Juice Shop](screenshots/juice-shop-running.png)
-
-
-
-\### Login Request Captured
-
-!\[Login Request](screenshots/burp-filter-login.png)
-
-
-
-\### Modified Request
-
-!\[Modified Request](screenshots/burp-modified-request-response.png)
-
-
-
-\### Postman Testing
-
-!\[Postman](screenshots/postman-get-request.png)
-
-
-
-\## Full Lab Report
-
-\[View Full Report](docs/full-report.pdf)
-
-
-
-\## Disclaimer
+## Disclaimer
 
 This project was conducted in a controlled lab environment using OWASP Juice Shop.
-
