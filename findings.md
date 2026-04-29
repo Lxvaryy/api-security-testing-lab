@@ -1,44 +1,25 @@
-\# Findings
+# Findings
 
+## Credential Exposure
 
+Login request contained:
+- email
+- password
 
-\## Sensitive Data Exposure
+## API Endpoint
 
-Login requests contained email and password in JSON format.
+POST /rest/user/login
 
+## Request Manipulation
 
+Requests can be modified using Burp Repeater
 
-\## API Endpoint Exposure
+## Server Response
 
-Endpoint:
+Invalid email or password
 
-/rest/user/login
+## Security Implications
 
-
-
-Can be accessed directly.
-
-
-
-\## Request Manipulation
-
-Requests can be modified using Burp Repeater.
-
-
-
-\## Server Response Behavior
-
-Server returned:
-
-"Invalid email or password"
-
-
-
-\## Security Implications
-
-\- APIs should use HTTPS to protect data
-
-\- Input validation is necessary
-
-\- Authentication must be secure
-
+- APIs should enforce HTTPS
+- Input validation is critical
+- Authentication must be secured
