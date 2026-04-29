@@ -1,98 +1,69 @@
-\# API Testing with Postman
+# API Testing with Postman
 
+## Overview
 
+Postman was used to test API endpoints and understand how different HTTP methods work. This helped simulate real-world API interactions outside of the browser.
 
-\## Overview
-
-Postman was used to send API requests and analyze responses.
-
-
-
-\## GET Request
+## GET Request
 
 Endpoint:
-
 https://jsonplaceholder.typicode.com/posts
 
+This request retrieves data from the server.
 
+Result:
+- A list of posts is returned in JSON format
 
-Used to retrieve data.
-
-
-
-\## POST Request
+## POST Request
 
 Endpoint:
-
 https://jsonplaceholder.typicode.com/posts
-
-
 
 Body:
-
 {
-
-&#x20; "title": "Evary testing",
-
-&#x20; "body": "learning api security",
-
-&#x20; "userId": 1
-
+  "id": 1,
+  "title": "Evary testing",
+  "body": "learning api security",
+  "userId": 1
 }
 
+This request creates new data on the server.
 
+Result:
+- A new object is returned with a generated ID
 
-Response returns a created object.
-
-
-
-\## PUT Request
+## PUT Request
 
 Endpoint:
-
 https://jsonplaceholder.typicode.com/posts/1
 
-
-
 Body:
-
 {
-
-&#x20; "id": 1,
-
-&#x20; "title": "Evary testing 2",
-
-&#x20; "body": "updated by Evary",
-
-&#x20; "userId": 1
-
+  "id": 1,
+  "title": "Evary testing 2",
+  "body": "updated by Evary",
+  "userId": 1
 }
 
+This request updates existing data.
 
+Result:
+- The updated object is returned
 
-Response returns updated data.
+## Key Learnings
 
+- GET retrieves data from a server
+- POST sends data to create new resources
+- PUT updates existing resources
+- APIs communicate using JSON format
 
+## Security Insight
 
-\## Key Learnings
+Understanding API behavior is important for identifying:
 
-\- GET retrieves data
+- exposed endpoints
+- weak authentication
+- improper input validation
+- insecure data handling
 
-\- POST creates data
-
-\- PUT updates data
-
-\- APIs use JSON structure
-
-
-
-\## Security Perspective
-
-Understanding APIs helps identify:
-
-\- exposed endpoints
-
-\- weak validation
-
-\- insecure data handling
-
+Postman allows testers to simulate requests and analyze how the server responds, which is essential for API security testing.
